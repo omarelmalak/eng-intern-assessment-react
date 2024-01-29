@@ -3,9 +3,10 @@ import { useState } from "react";
 
 interface LapResetButtonProps {
     lapReset: boolean;
+    setReset: (reset: boolean) => void;
 }
 
-export default function LapResetButton({ lapReset }: LapResetButtonProps) {
+export default function LapResetButton({ lapReset, setReset }: LapResetButtonProps) {
     const buttonStyleReset = {
         fontSize: '2vw',
         borderRadius: '50px',
@@ -36,10 +37,18 @@ export default function LapResetButton({ lapReset }: LapResetButtonProps) {
     const currentStyle = lapReset ? buttonStyleLap : buttonStyleReset;
     const currentText = lapReset ? lapText : resetText;
 
+    const [resetState, setResetState] = useState(false);
+
+    const toggleStyle = () => {
+        setResetState((prevResetState) => !prevResetState);
+
+        setReset(resetState);
+    };
+
     return (
         <button
             style={currentStyle}
-        // onClick= {}
+            onClick={toggleStyle}
         >
             {currentText}
         </button>
