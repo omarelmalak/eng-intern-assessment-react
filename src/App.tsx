@@ -15,7 +15,7 @@ export default function App() {
     minHeight: '100vh',
 
     // linear-gradient(to top, transparent, #9bce39, #87ceeb)
-    background: 'linear-gradient(to bottom right,rgba(34, 224, 114, 0.5) 0%, transparent 20%), linear-gradient(to bottom left, rgba(155, 206, 57, 0.6) 0%, transparent 20%), linear-gradient(to bottom, rgba(172, 236, 250, 1) 0%, transparent 40%), linear-gradient(to top, rgba(123, 216, 130, 0.3) 0%, transparent 100%)',
+    background: 'linear-gradient(to bottom right,rgba(34, 224, 114, 0.5) 0%, transparent 20%), linear-gradient(to bottom left, rgba(155, 206, 57, 0.6) 0%, transparent 20%), linear-gradient(to bottom, rgba(172, 236, 250, 1) 0%, transparent 40%), linear-gradient(to top, rgba(123, 216, 130, 0.15) 100%, transparent 100%)',
     color: '#000000',
     outline: 'none',
 
@@ -61,9 +61,7 @@ export default function App() {
       </h2>
 
       <div className="container" style={{ height: '5vh' }}></div>
-      <div>
-        <StopWatch></StopWatch>
-      </div>
+      <StopWatch></StopWatch>
     </div>
   );
 }
