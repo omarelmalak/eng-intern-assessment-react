@@ -16,7 +16,7 @@ export default function App() {
     maxHeight: '100vh',
 
     // linear-gradient(to top, transparent, #9bce39, #87ceeb)
-    background: 'linear-gradient(to bottom right,rgba(34, 224, 114, 0.5) 0%, transparent 15%), linear-gradient(to bottom left, rgba(155, 206, 57, 0.6) 0%, transparent 15%), linear-gradient(to bottom, rgba(172, 236, 250, 1) 0%, transparent 30%), linear-gradient(to top, rgba(123, 216, 130, 0.1) 100%, transparent 100%)',
+    background: 'linear-gradient(to bottom right,rgba(34, 224, 114, 0.5) 0%, transparent 15%), linear-gradient(to bottom left, rgba(155, 206, 57, 0.6) 0%, transparent 15%), linear-gradient(to bottom, rgba(172, 236, 250, 1) 0%, transparent 30%), linear-gradient(to top, rgba(244, 255, 249, 0.8) 100%, transparent 100%)',
     color: '#000000',
     outline: 'none',
 
