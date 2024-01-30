@@ -13,34 +13,16 @@ export default function App() {
     fontWeight: 'bold',
     minWidth: '100%',
     minHeight: '100vh',
+    maxHeight: '100vh',
 
     // linear-gradient(to top, transparent, #9bce39, #87ceeb)
-    background: 'linear-gradient(to bottom right,rgba(34, 224, 114, 0.5) 0%, transparent 20%), linear-gradient(to bottom left, rgba(155, 206, 57, 0.6) 0%, transparent 20%), linear-gradient(to bottom, rgba(172, 236, 250, 1) 0%, transparent 40%), linear-gradient(to top, rgba(123, 216, 130, 0.15) 100%, transparent 100%)',
+    background: 'linear-gradient(to bottom right,rgba(34, 224, 114, 0.5) 0%, transparent 15%), linear-gradient(to bottom left, rgba(155, 206, 57, 0.6) 0%, transparent 15%), linear-gradient(to bottom, rgba(172, 236, 250, 1) 0%, transparent 30%), linear-gradient(to top, rgba(244, 255, 249, 0.8) 100%, transparent 100%)',
     color: '#000000',
     outline: 'none',
 
   }
 
-  const darkModeBackground = {
-    fontFamily: 'Myriad',
-    textSize: '400px',
-    borderRadius: '50px',
-    padding: '20px 20px',
-    width: '100%',
-    height: '100%',
-    backgroundColor: '#d9534f',
-    color: '#fff',
-    border: 'none',
-    outline: 'none',
-  }
-
-  const [mode, setMode] = useState(true);
-
-  const toggleStyle = () => {
-    setMode((prevMode) => !prevMode);
-  };
-
-  const currentMode = mode ? lightModeBackground : darkModeBackground;
+  const currentMode = lightModeBackground;
 
 
 
@@ -62,6 +44,8 @@ export default function App() {
 
       <div className="container" style={{ height: '5vh' }}></div>
       <StopWatch></StopWatch>
+
+
     </div>
   );
 }

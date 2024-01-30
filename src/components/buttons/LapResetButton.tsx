@@ -37,12 +37,18 @@ export default function LapResetButton({ lapReset, setReset }: LapResetButtonPro
     const currentStyle = lapReset ? buttonStyleLap : buttonStyleReset;
     const currentText = lapReset ? lapText : resetText;
 
-    const [resetState, setResetState] = useState(false);
+
 
     const toggleStyle = () => {
-        setResetState((prevResetState) => !prevResetState);
+        // FALSE => RESET MODE
+        if (!lapReset) {
+            setReset(false);
 
-        setReset(resetState);
+        } else {
+            // TRUE => LAP MODE
+            setReset(true);
+
+        }
     };
 
     return (
