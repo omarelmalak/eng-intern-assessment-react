@@ -173,7 +173,7 @@ export default function StopWatch() {
                             key={lap}
                             onClick={() => console.log(lap)}
                             // IN-IF STATEMENT TO DETERMINE IF WE SHOULD INDICATE A MAX/MIN USING RED/GREEN HIGHLIGHT RESPECTIVELY
-                            style={{ borderRadius: '50px', background: '', borderColor: 'transparent', height: '10vh', fontSize: '50px', backgroundColor: (laps.length < 2) ? ('transparent') : (index == maxLapDiffIndex) ? ('red') : (index == minLapDiffIndex) ? ('green') : 'transparent' }}
+                            style={{ borderRadius: '50px', background: '', borderColor: 'transparent', height: '10vh', fontSize: '3vw', backgroundColor: (laps.length < 2) ? ('transparent') : (index == maxLapDiffIndex) ? ('red') : (index == minLapDiffIndex) ? ('green') : 'transparent' }}
                         >
                             Lap {index + 1}: {lap}
                         </li>)}
