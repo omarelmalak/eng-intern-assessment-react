@@ -9,7 +9,7 @@ export default function StartStopButton({ setLapResetButtonType }: StartStopButt
     const buttonStyleStop = {
         fontSize: '2vw',
         borderRadius: '50px',
-        padding: '20px 20px',
+        padding: '2vh',
         width: '10vw',
         backgroundColor: '#d9534f',
         color: '#fff',
@@ -21,7 +21,7 @@ export default function StartStopButton({ setLapResetButtonType }: StartStopButt
     const buttonStyleStart = {
         fontSize: '2vw',
         borderRadius: '50px',
-        padding: '20px 20px',
+        padding: '2vh',
         width: '10vw',
         backgroundColor: '#5cb85c',
         color: '#fff',

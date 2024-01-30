@@ -10,7 +10,7 @@ export default function LapResetButton({ lapReset, setReset }: LapResetButtonPro
     const buttonStyleReset = {
         fontSize: '2vw',
         borderRadius: '50px',
-        padding: '20px 20px',
+        padding: '2vh',
         width: '10vw',
         backgroundColor: '#999999',
         color: '#fff',
@@ -22,7 +22,7 @@ export default function LapResetButton({ lapReset, setReset }: LapResetButtonPro
     const buttonStyleLap = {
         fontSize: '2vw',
         borderRadius: '50px',
-        padding: '20px 20px',
+        padding: '2vh',
         width: '10vw',
         backgroundColor: '#7F7F7F',
         color: '#fff',
