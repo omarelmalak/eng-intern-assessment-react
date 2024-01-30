@@ -111,7 +111,9 @@ export default function StopWatch() {
             setMinLapDiffIndex(0);
         }
 
+
     }
+    // laps.reverse()
 
     return (
         <div className="container text-center" style={currentMode}>
@@ -129,12 +131,12 @@ export default function StopWatch() {
             <div className="col" style={{ height: '5vh', paddingTop: '6vh', paddingBottom: '3vh', backgroundColor: '' }}>
                 <div className="container" style={{ maxWidth: '50vw', height: '3px', padding: '', backgroundColor: 'grey', borderRadius: '20px' }}></div>
             </div>
-            <ul className="list-group" style={{ background: '', borderColor: '', height: '' }}>
+            <ul className="list-group" style={{ background: '', borderColor: '', height: '', flexDirection: 'column-reverse' }}>
                 {laps.map((lap, index) =>
                     <li className="list-group-item"
                         key={lap}
                         onClick={() => console.log(lap)}
-                        style={{ background: '', borderColor: 'rgba(150, 191, 72, 0.4)', borderBlockEndColor: '', height: '10vh', fontSize: '50px', backgroundColor: (laps.length <= 2) ? ('transparent') : (index == maxLapDiffIndex) ? ('red') : (index == minLapDiffIndex) ? ('green') : 'transparent' }}
+                        style={{ background: '', borderColor: 'rgba(150, 191, 72, 0.4)', borderBlockEndColor: '', height: '10vh', fontSize: '50px', backgroundColor: (laps.length < 2) ? ('transparent') : (index == maxLapDiffIndex) ? ('red') : (index == minLapDiffIndex) ? ('green') : 'transparent' }}
                     >
                         Lap {index + 1}: {lap}
                     </li>)}
